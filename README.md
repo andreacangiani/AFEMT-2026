@@ -12,22 +12,23 @@ Dr. Ankur Ankur <<aankur@sissa.it>>
 
 ---
 
-# Goals
+# Description 
+This course provides a high level introduction to the numerical analysis of PDES and related high-performance computing techniques, focusing on problems in mechanics such as fluid dynamics. Students will acquire advanced understanding on Computational modelling techniques, both theoretical and practical. The course will utilise a combination of frontal lectures and live programming demonstrations using the C++ deal.ii (dealii.org) Finite Element Library.
 
-## 1. Knowledge and understanding
-Students will gain a thorough understanding of the theory and practice of computational modeling and scientific computing, with a special emphasis on finite element analysis concepts. They will learn to implement these concepts in C++ using modern simulation platforms. The course will cover object-oriented and generic programming paradigms for finite element solvers. Additionally, students will become proficient in using common data structures, algorithms, and relevant libraries and frameworks essential for scientific computing.
 
-## 2. Applying knowledge and understanding
-Students will learn to apply their advanced programming skills to solve both familiar and new coding challenges. They will be able to develop advanced numerical solvers in C++, selecting and designing appropriate data structures and algorithms to tackle complex real-world computational problems. They will also acquire the ability to construct simulation tools using modern finite element libraries.
+# Content:
+Review of fundamentals of the Finite Element Method: theory and practice. A priori and a posteriori error estimates. Computational mechanics: fluid mechanics, linear elasticity. The discontinuous Galerkin Finite Element Method. Analysis of Finite Element Methods for the Stokes equations.  Theory and approximation of the Navier-Stokes problem. 
 
-## 3. Making judgment
-Students will develop critical thinking and analytical skills, enabling them to assess the effectiveness, flexibility, and efficiency of code implementations. They will be capable of evaluating different approaches to problem-solving and selecting optimal solutions based on informed analysis. By the end of the course, students will have developed the ability to design, implement, test, debug, and optimize complex scientific computing libraries.
+Tools for Finite Element programming.  Data structures and mesh generation, numerical quadrature techniques. Assembling and storage. Direct and iterative solvers, preconditioning techniques. Numerical linear algebra packages. Solution of nonlinear systems.
 
-## 4. Communication skills
-Through class discussions, project writing, and presentations, students will learn to effectively communicate their design decisions, code rationale, and problem-solving strategies. They will become adept at conveying technical information clearly and concisely.
+High Performance Computing. Parallel computing. Using the Docker. Introduction to the deal.II Finite Element library. Hands-on sessions for developing and implementing finite element solvers using deal.II. Visualization tools.
 
-## 5. Learning skills
-Students will acquire self-directed learning abilities, enabling them to stay current with state-of-the-art numerical simulation methods and modern libraries for scientific computing. They will be equipped to independently identify and troubleshoot coding issues and propose innovative solutions. They will also gain experience in team-based software development practices by working on group projects.
+
+# Suggested readings
+1. Programming - Principles and Practice Using C++, Bjarne Stroustrup, Addison-Wesley, May 2014 
+2. Learning scientific programming with Python, Christian Hill, Cambridge University Press, October 2020
+3. Finite Element Methods for Navier-Stokes Equations, Vivette Giraut & Pierre-Arnaud Raviart, Springer, 1986 
+4. Mathematical Aspects of Discontinuous Galerkin Methods, Daniele Antonio Di Pietro & Alexandre Ern, Springer, 2012
 
 ---
 
@@ -38,61 +39,6 @@ Prior knowledge of foundamentals about the numerical analysis of partial differe
 Knowledge of programming fundamentals (syntax, data types, variables, control structures, functions) is required for this course.
 
 Prior experience with a programming language, preferably C++.
-
----
-
-# Course content
-Review of fundamentals of the Finite Element Method. A priori and a posteriori error estimates. Fluid mechanics modelling. Computational Mechanics. Functional analytic setting. Analysis of saddle-point problems.  Analysis of Finite Element Methods for the Stokes equations. The discontinuous Galerkin Finite Element Method. Theory and approximation of the Navier-Stokes problem. 
-
-Tools for Finite Element programming.  Data structures and mesh generation, numerical quadrature techniques. Assembling and storage. Direct and iterative solvers, preconditioning techniques. Numerical linear algebra packages. Solution of nonlinear systems.
-
-Introduction to the deal.II Finite Element library. Practical case studies for real-world applications. Hands-on sessions for developing and implementing finite element solvers using deal.II. Visualization tools.
-
----
-
-# Teaching methods
-
-The course will utilize a combination of frontal lectures and live programming demonstrations.
-
-During the hands-on sessions, students will have the opportunity to work on problems related to the material covered in the frontal lectures. The solutions to these problems might be discussed, allowing students to receive feedback and gain a deeper understanding of the material.
-
-The course will maintain a balance of approximately 50% frontal lectures and 50% hands-on sessions.
-
-The course is designed to be highly interactive, with ample opportunities for students to ask questions and engage in discussions during both the frontal lectures and hands-on sessions.
-
----
-
-# Verification of learning
-
-Students will be required to complete a modelling and coding project. Their project will have to be presented to the instructors and will be discussed and evaluated during an oral exam.
-
-The maximum achievable grade is 30. Honors may be granted in exceptional cases, provided the final grade exceeds 30.
-
-Overall, the evaluation process is designed to encourage students to actively engage with the material and to develop practical skills that will be useful in their future careers.
-
----
-
-# Books and material
-
-The instructors will provide support material and references throughout the course. In addition, there are many free online resources available to supplement the course material.
-
-For students who prefer to read books, the following references are recommended:
-
-1. The Finite Element Method for Elliptic Problems, Philippe G. Ciarlet, SIAM, 2002
-2. Theory and Practice of Finite Elements, Alexandre Ern & Jean-Luc Guermond, Springer, 2004
-3. Finite Element Methods for Navier-Stokes Equations, Vivette Giraut & Pierre-Arnaud Raviart, Springer, 1986 
-4. Mathematical Aspects of Discontinuous Galerkin Methods, Daniele Antonio Di Pietro & Alexandre Ern, Springer, 2012
-5. Introduction to Numerical Methods for Variational Problems, Hans Petter Langtangen & Kent-Andre Mardal, Springer, 2019
-6. Programming - Principles and Practice Using C++, Bjarne Stroustrup, Addison-Wesley, May 2014 
-
-These books provide in-depth coverage of the course material and can serve as valuable resources for further study.
-
----
-
-# Sustainable Development Goals - Agenda 2030
-
-- Goal 9 - Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation
-- Goal 12 - Ensure sustainable consumption and production patterns
 
 ---
 
