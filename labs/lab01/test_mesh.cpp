@@ -52,35 +52,6 @@ main()
   // Output mesh.
   GridOut grid_out;
   grid_out.write_msh(tria, "first_mesh.msh");
-
-  // Defining FE space.
-  FE_Q<2> fe(1); // Degree 1 in 2D.
-
-  // Distributing degrees of freedom.
-  DoFHandler<2> dof_handler(tria);
-  dof_handler.distribute_dofs(fe);
-
-  // Renumbering.
-  DoFRenumbering::Cuthill_McKee(dof_handler);
-
-  // Creating dynamic sparsity pattern (inefficient but memory conservative).
-  DynamicSparsityPattern dsp(dof_handler.n_dofs(), dof_handler.n_dofs());
-  DoFTools::make_sparsity_pattern(dof_handler, dsp);
-
-  // Copy to static sparsity pattern (both efficient and memory conservative).
-  SparsityPattern sp;
-  sp.copy_from(dsp);
-
-  // Output sparsity pattern.
-  std::ofstream out("sparsity-pattern.svg");
-  sp.print_svg(out);
-
-  // Initialize system matrix and a solution vector.
-  SparseMatrix<double> system_matrix;
-  system_matrix.reinit(sp);
-
-  Vector<double> vector;
-  vector.reinit(dof_handler.n_dofs());
-
+  
   return 0;
 }
