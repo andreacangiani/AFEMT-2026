@@ -7,5 +7,5 @@ find_package(deal.II 9.6.0 REQUIRED
 )
 deal_ii_initialize_cached_variables()
 
-add_executable(test test.cpp)
-deal_ii_setup_target(test)
+add_executable(step_2 step_2.cpp)
+deal_ii_setup_target(step_2)
